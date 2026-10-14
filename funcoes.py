@@ -1,1 +1,1 @@
-print("pedro rinaldi é gay")
+oi
