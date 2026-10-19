@@ -1,1 +1,1 @@
-culpa do pedrlalasla
+def define_posicoes 
