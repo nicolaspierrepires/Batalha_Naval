@@ -60,8 +60,20 @@ def posicao_valida(frota, linha, coluna, orientacao, tamanho):
                 if posicao in navio:
                     return False
     return True
-navios = {"porta-aviões": [4, 1],"navio-tanque": [3, 2],"contratorpedeiro": [2, 3],"submarino": [1, 4],}
-frota = {"porta-aviões": [],"navio-tanque": [],"contratorpedeiro": [],"submarino": [],}
+navios = {
+    "porta-aviões": [4, 1],
+    "navio-tanque": [3, 2],
+    "contratorpedeiro": [2, 3],
+    "submarino": [1, 4],
+}
+
+frota = {
+    "porta-aviões": [],
+    "navio-tanque": [],
+    "contratorpedeiro": [],
+    "submarino": [],
+}
+
 for nome in navios:
     tamanho = navios[nome][0]
     quantidade = navios[nome][1]
@@ -78,9 +90,11 @@ for nome in navios:
                 orientacao = "horizontal"
         else:
             orientacao = "vertical"
+
         if posicao_valida(frota, linha, coluna, orientacao, tamanho):
             preenche_frota(frota, nome, linha, coluna, orientacao, tamanho)
             i = i + 1
         else:
             print('Esta posição não está válida!')
+
 print(frota)
