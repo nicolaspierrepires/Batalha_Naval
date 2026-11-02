@@ -1,4 +1,4 @@
-from funcoes import define_posicoes, preenche_frota, faz_jogada, posiciona_frota, afundados, posicao_valida, monta_tabuleiros
+from funcoes import define_posicoes, preenche_frota, faz_jogada, posiciona_frota, afundados, posicao_valida
 
 navios = {
     "porta-aviões": [4, 1],
