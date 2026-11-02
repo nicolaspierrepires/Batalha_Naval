@@ -60,18 +60,8 @@ def posicao_valida(frota, linha, coluna, orientacao, tamanho):
                 if posicao in navio:
                     return False
     return True
-navios = {
-    "porta-aviões": [4, 1],
-    "navio-tanque": [3, 2],
-    "contratorpedeiro": [2, 3],
-    "submarino": [1, 4],
-}
-frota = {
-    "porta-aviões": [],
-    "navio-tanque": [],
-    "contratorpedeiro": [],
-    "submarino": [],
-}
+navios = {"porta-aviões": [4, 1],"navio-tanque": [3, 2],"contratorpedeiro": [2, 3],"submarino": [1, 4],}
+frota = {"porta-aviões": [],"navio-tanque": [],"contratorpedeiro": [],"submarino": [],}
 for nome in navios:
     tamanho = navios[nome][0]
     quantidade = navios[nome][1]
